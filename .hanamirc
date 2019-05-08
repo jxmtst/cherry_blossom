@@ -1,0 +1,3 @@
+project=cherry_blossom
+test=rspec
+template=erb

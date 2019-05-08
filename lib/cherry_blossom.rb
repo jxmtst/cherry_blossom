@@ -1,0 +1,2 @@
+module CherryBlossom
+end
