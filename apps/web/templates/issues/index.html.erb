@@ -1,0 +1,13 @@
+<% if issues.any? %>
+  <div id="Issues">
+    <% issues.each do |issue| %>
+      <div class="Issue">
+        <h2># <%= issue.title %></h2>
+        <p>author: <%= issue.author %></p>
+        <p>class: <%= issue.class  %> / parent? - <%= issue.parent? %></p>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no Issues yet.</p>
+<% end %>
