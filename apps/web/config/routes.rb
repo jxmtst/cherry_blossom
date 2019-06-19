@@ -4,6 +4,4 @@
 # Example:
 get '/', to: ->(env) { [200, {}, ['Hello CherryBlossom from Hanami!']] }
 
-resources :books
-
 resources :issues
