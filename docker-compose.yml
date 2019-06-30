@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - '2300:2300'
+    tty: true
+    stdin_open: true
+    working_dir: /srv/
+    volumes:
+      - .:/srv/
+    environment:
+      - HANAMI_ENV=development
+    command: /bin/sh bin/entrypoint
