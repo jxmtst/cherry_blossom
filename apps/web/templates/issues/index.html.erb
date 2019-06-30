@@ -1,3 +1,4 @@
+<hr>
 <% if issues.any? %>
   <div id="Issues">
     <% issues.each do |issue| %>
@@ -11,3 +12,5 @@
 <% else %>
   <p class="placeholder">There are no Issues yet.</p>
 <% end %>
+<hr>
+<%= local :footer %>

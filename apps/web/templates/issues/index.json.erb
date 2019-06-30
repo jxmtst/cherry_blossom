@@ -1,0 +1,8 @@
+<% if issues.any? %>
+<div id="Issues">
+<%= issues.to_a.to_json %>
+<% else %>
+{
+  "error": '404'
+}
+<% end %>
